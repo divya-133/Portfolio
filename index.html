@@ -138,36 +138,36 @@
     <!-- @END_COMPONENT: Navigation -->
 
     <!-- Hero Section -->
-    <!-- @COMPONENT: HeroSection -->
-    <section id="home" class="min-h-screen flex items-center justify-center relative overflow-hidden pt-20">
-        <!-- Background Animation -->
-        <div class="absolute inset-0">
-            <div class="absolute top-1/4 left-1/4 w-64 h-64 bg-electric-blue/20 rounded-full filter blur-3xl animate-float"></div>
-            <div class="absolute top-1/2 right-1/4 w-48 h-48 bg-neon-purple/20 rounded-full filter blur-3xl animate-float" style="animation-delay: 2s"></div>
-            <div class="absolute bottom-1/4 left-1/2 w-56 h-56 bg-neon-pink/20 rounded-full filter blur-3xl animate-float" style="animation-delay: 4s"></div>
+<!-- @COMPONENT: HeroSection -->
+<section id="home" class="min-h-screen flex items-center justify-center relative overflow-hidden pt-20">
+    <!-- Background Animation -->
+    <div class="absolute inset-0">
+        <div class="absolute top-1/4 left-1/4 w-64 h-64 bg-electric-blue/20 rounded-full filter blur-3xl animate-float"></div>
+        <div class="absolute top-1/2 right-1/4 w-48 h-48 bg-neon-purple/20 rounded-full filter blur-3xl animate-float" style="animation-delay: 2s"></div>
+        <div class="absolute bottom-1/4 left-1/2 w-56 h-56 bg-neon-pink/20 rounded-full filter blur-3xl animate-float" style="animation-delay: 4s"></div>
+    </div>
+
+    <div class="container mx-auto px-4 sm:px-6 text-center relative z-10">
+        <div class="mb-8 animate-slide-up">
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-black mb-4">
+                Hello, <br>
+                This is <span class="gradient-text">Divya J</span>
+            </h1>
+            <p class="text-xl md:text-2xl lg:text-3xl text-gray-300 mb-8">
+                I'm a <span class="text-electric-blue font-semibold">Front-end developer </span>
+            </p>
         </div>
 
-        <div class="container mx-auto px-6 text-center relative z-10">
-            <div class="mb-8 animate-slide-up">
-                <h1 class="text-4xl md:text-6xl lg:text-7xl font-black mb-4">
-                    Hello, <br>
-                    This is <span class="gradient-text">Divya J</span>
-                </h1>
-                <p class="text-xl md:text-2xl lg:text-3xl text-gray-300 mb-8">
-                    I'm a <span class="text-electric-blue font-semibold">Front-end developer </span>
-                </p>
-            </div>
-
-            <!-- Code Block -->
-            <div class="code-block rounded-xl p-6 md:p-8 max-w-4xl mx-auto mb-8 text-left font-mono text-sm md:text-base animate-slide-up" style="animation-delay: 0.5s">
-                <div class="flex items-center mb-4">
-                    <div class="flex space-x-2">
-                        <div class="w-3 h-3 bg-red-500 rounded-full"></div>
-                        <div class="w-3 h-3 bg-yellow-500 rounded-full"></div>
-                        <div class="w-3 h-3 bg-green-500 rounded-full"></div>
-                    </div>
+        <!-- Code Block -->
+        <div class="code-block rounded-xl p-6 md:p-8 max-w-4xl mx-auto mb-8 text-left font-mono text-sm md:text-base animate-slide-up overflow-x-auto whitespace-pre scrollbar-hide" style="animation-delay: 0.5s">
+            <div class="flex items-center mb-4">
+                <div class="flex space-x-2">
+                    <div class="w-3 h-3 bg-red-500 rounded-full"></div>
+                    <div class="w-3 h-3 bg-yellow-500 rounded-full"></div>
+                    <div class="w-3 h-3 bg-green-500 rounded-full"></div>
                 </div>
-                <pre class="text-gray-300"><code><span class="text-neon-purple">const</span> <span class="text-neon-cyan">coder</span> <span class="text-white">=</span> <span class="text-yellow-400">{</span>
+            </div>
+<pre class="text-gray-300"><code><span class="text-neon-purple">const</span> <span class="text-neon-cyan">coder</span> <span class="text-white">=</span> <span class="text-yellow-400">{</span>
     <span class="text-neon-green">name</span><span class="text-white">:</span> <span class="text-orange-400">'Divya J'</span><span class="text-white">,</span>
     <span class="text-neon-green">skills</span><span class="text-white">:</span> <span class="text-white">[</span><span class="text-orange-400">'React'</span><span class="text-white">,</span> <span class="text-orange-400">'HTML'</span><span class="text-white">,</span> <span class="text-orange-400">'CSS'</span><span class="text-white">,</span> <span class="text-orange-400">'Javascript'</span><span class="text-white">,</span> <span class="text-orange-400">'Java'</span><span class="text-white">,</span> <span class="text-orange-400">'Figma'</span><span class="text-white">,</span> 
              <span class="text-orange-400">'VS Code'</span><span class="text-white">,</span><span class="text-orange-400">'Tailwind'</span><span class="text-white">,</span><span class="text-orange-400">'Github'</span><span class="text-white">,</span> <span class="text-orange-400">'Canva'</span><span class="text-white">,</span> <span class="text-orange-400">'Git'</span><span class="text-white">],</span>
@@ -182,22 +182,29 @@
         <span class="text-white">);</span>
     <span class="text-yellow-400">}</span>
 <span class="text-yellow-400">};</span></code></pre>
-            </div>
-
-            <!-- CTA Buttons -->
-            <div class="flex flex-col sm:flex-row gap-4 justify-center animate-slide-up" style="animation-delay: 1s">
-                <a href="#contact" class="gradient-border">
-                    <div class="bg-dark-navy px-8 py-3 rounded-xl hover:bg-electric-blue/10 transition-all duration-300 font-semibold">
-                        Contact Me
-                    </div>
-                </a>
-                <a href="https://drive.google.com/file/d/1U8LJbzGIu-POxMP4deMWTHmbjcHFdbxE/view" target="_blank" class="bg-gradient-to-r from-electric-blue to-neon-purple px-8 py-3 rounded-xl hover:shadow-lg hover:shadow-electric-blue/25 transition-all duration-300 font-semibold">
-                    Get Resume
-                </a>
-            </div>
         </div>
-    </section>
-    <!-- @END_COMPONENT: HeroSection -->
+
+        <!-- CTA Buttons -->
+        <div class="flex flex-col sm:flex-row gap-4 justify-center animate-slide-up" style="animation-delay: 1s">
+            <a href="#contact" class="gradient-border">
+                <div class="bg-dark-navy px-8 py-3 rounded-xl hover:bg-electric-blue/10 transition-all duration-300 font-semibold">
+                    Contact Me
+                </div>
+            </a>
+            <a href="https://drive.google.com/file/d/1U8LJbzGIu-POxMP4deMWTHmbjcHFdbxE/view" target="_blank" class="bg-gradient-to-r from-electric-blue to-neon-purple px-8 py-3 rounded-xl hover:shadow-lg hover:shadow-electric-blue/25 transition-all duration-300 font-semibold">
+                Get Resume
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Hide scrollbar style -->
+<style>
+.scrollbar-hide::-webkit-scrollbar { display: none; }
+.scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+</style>
+<!-- @END_COMPONENT: HeroSection -->
+>
 
     <!-- About Section -->
 <section id="about" class="py-20 relative">
@@ -208,7 +215,7 @@
         </div>
 
         <div class="grid lg:grid-cols-2 gap-12 items-center">
-            <div class="space-y-6">
+            <div class="space-y-6 pl-4 lg:pl-6">
                 <p class="text-lg text-gray-300 leading-relaxed">
                     My name is Divya. I am a professional and enthusiastic programmer in my daily life. I am a quick learner with a self-learning attitude. I love to learn and explore new technologies and am passionate about problem-solving.
                 </p>
@@ -244,7 +251,7 @@
 <!-- Circle Image with Glow -->
 <div class="relative glow-ring rounded-full p-1 bg-gradient-to-tr from-electric-blue to-neon-purple inline-block"
      style="width: 300px; height: 300px;">
-    <img src="assets/logos/tech.jpg" 
+    <img src="assets/logos/profile.png" 
          alt="Girl Coding" 
          class="w-full h-full rounded-full object-cover border-4 border-white">
 </div>
@@ -285,7 +292,7 @@
 
     <!-- Education Section -->
      <section id="education" class="py-20 relative">
-        <div class="container mx-auto px-4 sm:px-6">
+        <div class="container mx-auto max-w-4xl">
             <div class="container mx-auto px-6">
             <div class="text-center mb-16">
                 <h2 class="text-4xl md:text-5xl font-bold gradient-text mb-8">Education</h2>
@@ -341,6 +348,7 @@
         </div>
     </section>
 
+
     <!-- Skills Section -->
 <section id="skills" class="py-20 bg-gradient-to-b from-dark-200 to-dark-400 overflow-hidden">
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -350,29 +358,29 @@
 
  <!-- Skills Marquee -->
 <div class="relative">
-  <div class="flex flex-wrap justify-center gap-6 md:space-x-8 md:flex-nowrap md:animate-marquee">
+  <div class="flex space-x-8 md:animate-marquee overflow-x-auto md:overflow-hidden scrollbar-hide snap-x snap-mandatory">
     <!-- First set of skills -->
-    <div class="skill-item flex flex-col items-center min-w-[120px] transition-all duration-300">
+    <div class="skill-item flex flex-col items-center min-w-[120px] snap-start transition-all duration-300">
       <i class="fab fa-html5 text-6xl text-orange-500 mb-2"></i>
       <span class="text-white font-medium">HTML</span>
     </div>
-    <div class="skill-item flex flex-col items-center min-w-[120px] transition-all duration-300">
+    <div class="skill-item flex flex-col items-center min-w-[120px] snap-start transition-all duration-300">
       <i class="fab fa-css3-alt text-6xl text-blue-500 mb-2"></i>
       <span class="text-white font-medium">CSS</span>
     </div>
-    <div class="skill-item flex flex-col items-center min-w-[120px] transition-all duration-300">
+    <div class="skill-item flex flex-col items-center min-w-[120px] snap-start transition-all duration-300">
       <i class="fab fa-js-square text-6xl text-yellow-500 mb-2"></i>
       <span class="text-white font-medium">JavaScript</span>
     </div>
-    <div class="skill-item flex flex-col items-center min-w-[120px] transition-all duration-300">
+    <div class="skill-item flex flex-col items-center min-w-[120px] snap-start transition-all duration-300">
       <i class="fab fa-react text-6xl text-cyan-400 mb-2"></i>
       <span class="text-white font-medium">React</span>
     </div>
-    <div class="skill-item flex flex-col items-center min-w-[120px] transition-all duration-300">
+    <div class="skill-item flex flex-col items-center min-w-[120px] snap-start transition-all duration-300">
       <i class="fab fa-java text-6xl text-blue-400 mb-2"></i>
       <span class="text-white font-medium">Java</span>
     </div>
-    <div class="skill-item flex flex-col items-center min-w-[120px] transition-all duration-300">
+    <div class="skill-item flex flex-col items-center min-w-[120px] snap-start transition-all duration-300">
       <i class="fab mb-2" style="display:flex; align-items:center; justify-content:center;">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 154" width="64" height="64">
           <path fill="#38B2AC" d="M128 0C93.867 0 74.667 17.067 70.4 51.2c9.067-13.867 20.267-19.2 33.6-16 7.307 1.76 12.48 6.907 18.24 12.64 9.387 9.333 20.213 20.053 43.893 20.053 34.133 0 53.333-17.067 57.6-51.2-9.067 13.867-20.267 19.2-33.6 16-7.307-1.76-12.48-6.907-18.24-12.64C162.507 10.72 151.68 0 128 0zM70.4 76.8C36.267 76.8 17.067 93.867 12.8 128c9.067-13.867 20.267-19.2 33.6-16 7.307 1.76 12.48 6.907 18.24 12.64 9.387 9.333 20.213 20.053 43.893 20.053 34.133 0 53.333-17.067 57.6-51.2-9.067 13.867-20.267 19.2-33.6 16-7.307-1.76-12.48-6.907-18.24-12.64C104.907 87.52 94.08 76.8 70.4 76.8z"/>
@@ -380,52 +388,52 @@
       </i>
       <span class="text-white font-medium">Tailwind</span>
     </div>
-    <div class="skill-item flex flex-col items-center min-w-[120px] transition-all duration-300">
+    <div class="skill-item flex flex-col items-center min-w-[120px] snap-start transition-all duration-300">
       <i class="fas fa-database text-6xl text-purple-500 mb-2"></i>
       <span class="text-white font-medium">MongoDB</span>
     </div>
-    <div class="skill-item flex flex-col items-center min-w-[120px] transition-all duration-300">
+    <div class="skill-item flex flex-col items-center min-w-[120px] snap-start transition-all duration-300">
       <i class="fab fa-figma text-6xl text-orange-400 mb-2"></i>
       <span class="text-white font-medium">Figma</span>
     </div>
-    <div class="skill-item flex flex-col items-center min-w-[120px] transition-all duration-300">
+    <div class="skill-item flex flex-col items-center min-w-[120px] snap-start transition-all duration-300">
       <img src="assets/logos/canva-icon.jpg" alt="Canva Logo" class="mb-2" width="58" height="58">
       <span class="text-white font-medium">Canva</span>
     </div>
-    <div class="skill-item flex flex-col items-center min-w-[120px] transition-all duration-300">
+    <div class="skill-item flex flex-col items-center min-w-[120px] snap-start transition-all duration-300">
       <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Visual_Studio_Code_1.35_icon.svg" alt="VS Code Logo" class="mb-2" width="58" height="58">
       <span class="text-white font-medium">VS Code</span>
     </div>
-    <div class="skill-item flex flex-col items-center min-w-[120px] transition-all duration-300">
+    <div class="skill-item flex flex-col items-center min-w-[120px] snap-start transition-all duration-300">
       <i class="fab fa-git-alt text-6xl text-red-500 mb-2"></i>
       <span class="text-white font-medium">Git</span>
     </div>
-    <div class="skill-item flex flex-col items-center min-w-[120px] transition-all duration-300">
+    <div class="skill-item flex flex-col items-center min-w-[120px] snap-start transition-all duration-300">
       <i class="fab fa-github text-6xl text-white mb-2"></i>
       <span class="text-white font-medium">GitHub</span>
     </div>
     <!-- Duplicate set starts here, in **same order** so no gap when looping -->
-    <div class="skill-item flex flex-col items-center min-w-[120px] transition-all duration-300">
+    <div class="skill-item flex flex-col items-center min-w-[120px] snap-start transition-all duration-300">
       <i class="fab fa-html5 text-6xl text-orange-500 mb-2"></i>
       <span class="text-white font-medium">HTML</span>
     </div>
-    <div class="skill-item flex flex-col items-center min-w-[120px] transition-all duration-300">
+    <div class="skill-item flex flex-col items-center min-w-[120px] snap-start transition-all duration-300">
       <i class="fab fa-css3-alt text-6xl text-blue-500 mb-2"></i>
       <span class="text-white font-medium">CSS</span>
     </div>
-    <div class="skill-item flex flex-col items-center min-w-[120px] transition-all duration-300">
+    <div class="skill-item flex flex-col items-center min-w-[120px] snap-start transition-all duration-300">
       <i class="fab fa-js-square text-6xl text-yellow-500 mb-2"></i>
       <span class="text-white font-medium">JavaScript</span>
     </div>
-    <div class="skill-item flex flex-col items-center min-w-[120px] transition-all duration-300">
+    <div class="skill-item flex flex-col items-center min-w-[120px] snap-start transition-all duration-300">
       <i class="fab fa-react text-6xl text-cyan-400 mb-2"></i>
       <span class="text-white font-medium">React</span>
     </div>
-    <div class="skill-item flex flex-col items-center min-w-[120px] transition-all duration-300">
+    <div class="skill-item flex flex-col items-center min-w-[120px] snap-start transition-all duration-300">
       <i class="fab fa-java text-6xl text-blue-400 mb-2"></i>
       <span class="text-white font-medium">Java</span>
     </div>
-    <div class="skill-item flex flex-col items-center min-w-[120px] transition-all duration-300">
+    <div class="skill-item flex flex-col items-center min-w-[120px] snap-start transition-all duration-300">
       <i class="fab mb-2" style="display:flex; align-items:center; justify-content:center;">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 154" width="64" height="64">
           <path fill="#38B2AC" d="M128 0C93.867 0 74.667 17.067 70.4 51.2c9.067-13.867 20.267-19.2 33.6-16 7.307 1.76 12.48 6.907 18.24 12.64 9.387 9.333 20.213 20.053 43.893 20.053 34.133 0 53.333-17.067 57.6-51.2-9.067 13.867-20.267 19.2-33.6 16-7.307-1.76-12.48-6.907-18.24-12.64C162.507 10.72 151.68 0 128 0zM70.4 76.8C36.267 76.8 17.067 93.867 12.8 128c9.067-13.867 20.267-19.2 33.6-16 7.307 1.76 12.48 6.907 18.24 12.64 9.387 9.333 20.213 20.053 43.893 20.053 34.133 0 53.333-17.067 57.6-51.2-9.067 13.867-20.267 19.2-33.6 16-7.307-1.76-12.48-6.907-18.24-12.64C104.907 87.52 94.08 76.8 70.4 76.8z"/>
@@ -433,27 +441,27 @@
       </i>
       <span class="text-white font-medium">Tailwind</span>
     </div>
-    <div class="skill-item flex flex-col items-center min-w-[120px] transition-all duration-300">
+    <div class="skill-item flex flex-col items-center min-w-[120px] snap-start transition-all duration-300">
       <i class="fas fa-database text-6xl text-purple-500 mb-2"></i>
       <span class="text-white font-medium">MongoDB</span>
     </div>
-    <div class="skill-item flex flex-col items-center min-w-[120px] transition-all duration-300">
+    <div class="skill-item flex flex-col items-center min-w-[120px] snap-start transition-all duration-300">
       <i class="fab fa-figma text-6xl text-orange-400 mb-2"></i>
       <span class="text-white font-medium">Figma</span>
     </div>
-    <div class="skill-item flex flex-col items-center min-w-[120px] transition-all duration-300">
+    <div class="skill-item flex flex-col items-center min-w-[120px] snap-start transition-all duration-300">
       <img src="assets/logos/canva-icon.jpg" alt="Canva Logo" class="mb-2" width="58" height="58">
       <span class="text-white font-medium">Canva</span>
     </div>
-    <div class="skill-item flex flex-col items-center min-w-[120px] transition-all duration-300">
+    <div class="skill-item flex flex-col items-center min-w-[120px] snap-start transition-all duration-300">
       <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Visual_Studio_Code_1.35_icon.svg" alt="VS Code Logo" class="mb-2" width="58" height="58">
       <span class="text-white font-medium">VS Code</span>
     </div>
-    <div class="skill-item flex flex-col items-center min-w-[120px] transition-all duration-300">
+    <div class="skill-item flex flex-col items-center min-w-[120px] snap-start transition-all duration-300">
       <i class="fab fa-git-alt text-6xl text-red-500 mb-2"></i>
       <span class="text-white font-medium">Git</span>
     </div>
-    <div class="skill-item flex flex-col items-center min-w-[120px] transition-all duration-300">
+    <div class="skill-item flex flex-col items-center min-w-[120px] snap-start transition-all duration-300">
       <i class="fab fa-github text-6xl text-white mb-2"></i>
       <span class="text-white font-medium">GitHub</span>
     </div>
@@ -462,180 +470,181 @@
 </div>
 </section>
 
-   <!-- Projects Section -->
-<!-- @COMPONENT: ProjectsSection -->
-<section id="projects" class="py-20 relative">
-    <div class="container mx-auto px-4 sm:px-6">
-        <div class="text-center mb-16">
-            <h2 class="text-4xl md:text-5xl font-bold gradient-text">PROJECTS</h2>
-        </div>
+<style>
+/* Hide scrollbars on WebKit (Chrome/Safari) and Firefox */
+.scrollbar-hide::-webkit-scrollbar { display: none; }
+.scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+</style>
 
-        <!-- First 4 Projects -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-6xl mx-auto">
-            <!-- Project 1: Portfolio -->
-            <div class="project-card bg-gradient-to-br from-electric-blue/10 to-neon-purple/10 border border-electric-blue/20 rounded-xl p-8 transition-all duration-300 hover:border-electric-blue/40">
-                <img src="assets/logos/portfolio.png" alt="Portfolio Interface" lass="w-full h-auto object-cover rounded-lg mb-6" />
-                <h3 class="text-2xl font-bold text-electric-blue mb-4">Portfolio</h3>
-                <div class="code-block rounded-lg p-4 mb-6 font-mono text-sm">
+   <!-- Projects Section -->
+<section id="projects" class="py-20 relative">
+  <div class="container mx-auto px-6">
+    <div class="text-center mb-16">
+      <h2 class="text-4xl md:text-5xl font-bold gradient-text">PROJECTS</h2>
+    </div>
+
+    <!-- First 4 Projects -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-6xl mx-auto">
+      <!-- Project 1 -->
+      <div class="project-card bg-gradient-to-br from-electric-blue/10 to-neon-purple/10 border border-electric-blue/20 rounded-xl p-8 transition-all duration-300 hover:border-electric-blue/40">
+        <img src="assets/logos/portfolio.png" alt="Portfolio Interface" class="w-full h-auto object-cover rounded-lg mb-6" />
+        <h3 class="text-2xl font-bold text-electric-blue mb-4">Portfolio</h3>
+        <div class="code-block rounded-lg p-4 mb-6 font-mono text-sm overflow-x-auto">
 <pre><code><span class="text-neon-purple">const</span> <span class="text-neon-cyan">project</span> = {
     <span class="text-neon-green">name</span>: '<span class="text-orange-400">Portfolio</span>',
     <span class="text-neon-green">tools</span>: ['<span class="text-orange-400">HTML</span>', '<span class="text-orange-400">CSS</span>', '<span class="text-orange-400">JavaScript</span>'],
     <span class="text-neon-green">myRole</span>: '<span class="text-orange-400">Front-end Developer</span>',
 };</code></pre>
-                </div>
-                <p class="text-gray-300 mb-6 leading-relaxed">
-                    I built a dynamic, responsive portfolio website using HTML, CSS, and JavaScript to showcase my skills and projects with a modern, interactive design that works seamlessly across all devices.
-                </p>
-                <div class="flex gap-4">
-                    <a href="https://profound-bublanina-0198aa.netlify.app/" class="bg-gradient-to-r from-electric-blue to-neon-cyan px-6 py-2 rounded-lg font-semibold hover:shadow-lg transition-all duration-300">Live Demo</a>
-                    <a href="https://github.com/divya-133/Portfolio" class="border border-electric-blue text-electric-blue px-6 py-2 rounded-lg font-semibold hover:bg-electric-blue/10 transition-all duration-300">Code</a>
-                </div>
-            </div>
-            
-            <!-- Project 2: Landing Page -->
-            <div class="project-card bg-gradient-to-br from-neon-pink/10 to-neon-cyan/10 border border-neon-pink/20 rounded-xl p-8 transition-all duration-300 hover:border-neon-pink/40">
-                <img src="assets/logos/landing.png" alt="Landing Page" lass="w-full h-auto object-cover rounded-lg mb-6" />
-                <h3 class="text-2xl font-bold text-neon-pink mb-4">Landing Page</h3>
-                <div class="code-block rounded-lg p-4 mb-6 font-mono text-sm">
+        </div>
+        <p class="text-gray-300 mb-6 leading-relaxed">
+          I built a dynamic, responsive portfolio website using HTML, CSS, and JavaScript to showcase my skills and projects with a modern, interactive design that works seamlessly across all devices.
+        </p>
+        <div class="flex flex-wrap gap-4">
+          <a href="https://profound-bublanina-0198aa.netlify.app/" class="bg-gradient-to-r from-electric-blue to-neon-cyan px-6 py-2 rounded-lg font-semibold hover:shadow-lg transition-all duration-300">Live Demo</a>
+          <a href="https://github.com/divya-133/Portfolio" class="border border-electric-blue text-electric-blue px-6 py-2 rounded-lg font-semibold hover:bg-electric-blue/10 transition-all duration-300">Code</a>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-card bg-gradient-to-br from-neon-pink/10 to-neon-cyan/10 border border-neon-pink/20 rounded-xl p-8 transition-all duration-300 hover:border-neon-pink/40">
+        <img src="assets/logos/landing.png" alt="Landing Page" class="w-full h-auto object-cover rounded-lg mb-6" />
+        <h3 class="text-2xl font-bold text-neon-pink mb-4">Landing Page</h3>
+        <div class="code-block rounded-lg p-4 mb-6 font-mono text-sm overflow-x-auto">
 <pre><code><span class="text-neon-purple">const</span> <span class="text-neon-cyan">project</span> = {
     <span class="text-neon-green">name</span>: '<span class="text-orange-400">Landing Page</span>',
     <span class="text-neon-green">tools</span>: ['<span class="text-orange-400">HTML</span>', '<span class="text-orange-400">CSS</span>'],
     <span class="text-neon-green">myRole</span>: '<span class="text-orange-400">Front-end Developer</span>',
 };</code></pre>
-                </div>
-                <p class="text-gray-300 mb-6 leading-relaxed">
-                    I created a personal landing page that blends creativity and clean design with smooth user interactions. Built entirely with HTML5 and CSS3, it delivers a sleek, responsive experience across all devices.
-                </p>
-                <div class="flex gap-4">
-                    <a href="https://legendary-croquembouche-e67f9f.netlify.app/" class="bg-gradient-to-r from-neon-pink to-neon-purple px-6 py-2 rounded-lg font-semibold hover:shadow-lg transition-all duration-300">Live Demo</a>
-                    <a href="https://github.com/divya-133/Landing-Page" class="border border-neon-pink text-neon-pink px-6 py-2 rounded-lg font-semibold hover:bg-neon-pink/10 transition-all duration-300">Code</a>
-                </div>
-            </div>
+        </div>
+        <p class="text-gray-300 mb-6 leading-relaxed">
+          I created a personal landing page that blends creativity and clean design with smooth user interactions. Built entirely with HTML5 and CSS3, it delivers a sleek, responsive experience across all devices.
+        </p>
+        <div class="flex flex-wrap gap-4">
+          <a href="https://legendary-croquembouche-e67f9f.netlify.app/" class="bg-gradient-to-r from-neon-pink to-neon-purple px-6 py-2 rounded-lg font-semibold hover:shadow-lg transition-all duration-300">Live Demo</a>
+          <a href="https://github.com/divya-133/Landing-Page" class="border border-neon-pink text-neon-pink px-6 py-2 rounded-lg font-semibold hover:bg-neon-pink/10 transition-all duration-300">Code</a>
+        </div>
+      </div>
 
-            <!-- Project 3: Invoice Generator -->
-            <div class="project-card bg-gradient-to-br from-neon-green/10 to-electric-blue/10 border border-neon-green/20 rounded-xl p-8 transition-all duration-300 hover:border-neon-green/40">
-                <img src="assets/logos/invoice.png" alt="Invoice Generator" lass="w-full h-auto object-cover rounded-lg mb-6" />
-                <h3 class="text-2xl font-bold text-neon-green mb-4">Invoice Generator</h3>
-                <div class="code-block rounded-lg p-4 mb-6 font-mono text-sm">
+      <!-- Project 3 -->
+      <div class="project-card bg-gradient-to-br from-neon-green/10 to-electric-blue/10 border border-neon-green/20 rounded-xl p-8 transition-all duration-300 hover:border-neon-green/40">
+        <img src="assets/logos/invoice.png" alt="Invoice Generator" class="w-full h-auto object-cover rounded-lg mb-6" />
+        <h3 class="text-2xl font-bold text-neon-green mb-4">Invoice Generator</h3>
+        <div class="code-block rounded-lg p-4 mb-6 font-mono text-sm overflow-x-auto">
 <pre><code><span class="text-neon-purple">const</span> <span class="text-neon-cyan">project</span> = {
     <span class="text-neon-green">name</span>: '<span class="text-orange-400">Invoice Generator</span>',
     <span class="text-neon-green">tools</span>: ['<span class="text-orange-400">HTML</span>', '<span class="text-orange-400">CSS</span>', '<span class="text-orange-400">JavaScript</span>'],
     <span class="text-neon-green">myRole</span>: '<span class="text-orange-400">Front-end Developer</span>',
 };</code></pre>
-                </div>
-                <p class="text-gray-300 mb-6 leading-relaxed">
-                    I built a fast, responsive invoice generator using HTML, CSS, and JavaScript that lets freelancers and small businesses create, preview, and download invoices instantly. Supports unlimited items, auto‑calculations, live previews, and PDF exports.
-                </p>
-                <div class="flex gap-4">
-                    <a href="https://extraordinary-starburst-4fda3d.netlify.app/" class="bg-gradient-to-r from-neon-green to-electric-blue px-6 py-2 rounded-lg font-semibold hover:shadow-lg transition-all duration-300">Live Demo</a>
-                    <a href="https://github.com/divya-133/Invoice-generator" class="border border-neon-green text-neon-green px-6 py-2 rounded-lg font-semibold hover:bg-neon-green/10 transition-all duration-300">Code</a>
-                </div>
-            </div>
+        </div>
+        <p class="text-gray-300 mb-6 leading-relaxed">
+          A fast, responsive invoice generator using HTML, CSS, and JavaScript for freelancers and small businesses—create, preview, and download invoices instantly.
+        </p>
+        <div class="flex flex-wrap gap-4">
+          <a href="https://extraordinary-starburst-4fda3d.netlify.app/" class="bg-gradient-to-r from-neon-green to-electric-blue px-6 py-2 rounded-lg font-semibold hover:shadow-lg transition-all duration-300">Live Demo</a>
+          <a href="https://github.com/divya-133/Invoice-generator" class="border border-neon-green text-neon-green px-6 py-2 rounded-lg font-semibold hover:bg-neon-green/10 transition-all duration-300">Code</a>
+        </div>
+      </div>
 
-            <!-- Project 4: Smart Clipboard Manager -->
-            <div class="project-card bg-gradient-to-br from-neon-purple/10 to-neon-pink/10 border border-neon-purple/20 rounded-xl p-8 transition-all duration-300 hover:border-neon-purple/40">
-                <img src="assets/logos/clipboard.png" alt="Smart Clipboard Manager" lass="w-full h-auto object-cover rounded-lg mb-6" />
-                <h3 class="text-2xl font-bold text-neon-purple mb-4">Smart Clipboard Manager</h3>
-                <div class="code-block rounded-lg p-4 mb-6 font-mono text-sm">
+      <!-- Project 4 -->
+      <div class="project-card bg-gradient-to-br from-neon-purple/10 to-neon-pink/10 border border-neon-purple/20 rounded-xl p-8 transition-all duration-300 hover:border-neon-purple/40">
+        <img src="assets/logos/clipboard.png" alt="Smart Clipboard Manager" class="w-full h-auto object-cover rounded-lg mb-6" />
+        <h3 class="text-2xl font-bold text-neon-purple mb-4">Smart Clipboard Manager</h3>
+        <div class="code-block rounded-lg p-4 mb-6 font-mono text-sm overflow-x-auto">
 <pre><code><span class="text-neon-purple">const</span> <span class="text-neon-cyan">project</span> = {
     <span class="text-neon-green">name</span>: '<span class="text-orange-400">Smart Clipboard Manager</span>',
     <span class="text-neon-green">tools</span>: ['<span class="text-orange-400">Java</span>', '<span class="text-orange-400">JSON</span>', '<span class="text-orange-400">FlatLaf</span>'],
     <span class="text-neon-green">myRole</span>: '<span class="text-orange-400">Solo Developer</span>',
 };</code></pre>
-                </div>
-                <p class="text-gray-300 mb-6 leading-relaxed">
-                    I built SmartClipboardManager, a Java Swing app that securely captures, organizes, and syncs text and image clipboard data with AES encryption, tagging, search, and auto‑cleanup. Built using Java 17, Swing + FlatLaf, and encrypted JSON storage.
-                </p>
-                <div class="flex gap-4">
-                    <a href="https://github.com/divya-133/Smart-Clipboard-Manager" class="border border-neon-purple text-neon-purple px-6 py-2 rounded-lg font-semibold hover:bg-neon-purple/10 transition-all duration-300">Code</a>
-                </div>
-            </div>
         </div>
-<!-- Extra Projects (Initially Hidden) -->
-        <div id="extra-projects" class="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-6xl mx-auto mt-8 hidden">
-           <!-- Project 5: Mini-project -->
-<div class="project-card bg-gradient-to-br from-yellow-400/10 to-yellow-200/10 border border-yellow-400/20 rounded-xl p-8 transition-all duration-300 hover:border-yellow-400/40">
-    <img src="https://placehold.co/800x400/png?text=Mini+Project" alt="Landing Page" class="w-full h-auto object-cover rounded-lg mb-6" />
-    <h3 class="text-2xl font-bold text-yellow-400 mb-4">Mini-project</h3>
-    <div class="code-block rounded-lg p-4 mb-6 font-mono text-sm">
+        <p class="text-gray-300 mb-6 leading-relaxed">
+          Java Swing app that securely captures, organizes, and syncs clipboard data with AES encryption, tagging, search, and auto‑cleanup.
+        </p>
+        <div class="flex flex-wrap gap-4">
+          <a href="https://github.com/divya-133/Smart-Clipboard-Manager" class="border border-neon-purple text-neon-purple px-6 py-2 rounded-lg font-semibold hover:bg-neon-purple/10 transition-all duration-300">Code</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Extra Projects -->
+    <div id="extra-projects" class="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-6xl mx-auto mt-8 hidden">
+      <!-- Project 5 -->
+      <div class="project-card bg-gradient-to-br from-yellow-400/10 to-yellow-200/10 border border-yellow-400/20 rounded-xl p-8 transition-all duration-300 hover:border-yellow-400/40">
+        <img src="https://placehold.co/800x400/png?text=Mini+Project" alt="Mini Project" class="w-full h-auto object-cover rounded-lg mb-6" />
+        <h3 class="text-2xl font-bold text-yellow-400 mb-4">Mini-project</h3>
+        <div class="code-block rounded-lg p-4 mb-6 font-mono text-sm overflow-x-auto">
 <pre><code><span class="text-neon-purple">const</span> <span class="text-neon-cyan">project</span> = {
     <span class="text-neon-green">name</span>: '<span class="text-orange-400">Mini-project</span>',
     <span class="text-neon-green">tools</span>: ['<span class="text-orange-400">Java</span>'],
-    <span class="text-neon-green">myRole</span>: '<span class="text-orange-400">Solo-Developer</span>',
+    <span class="text-neon-green">myRole</span>: '<span class="text-orange-400">Solo Developer</span>',
 };</code></pre>
-    </div>
-    <p class="text-gray-300 mb-6 leading-relaxed">
-        Created mini‑projects in Core Java applying OOP concepts to solve real‑world problems. Built a Number Guessing Game, Quiz App, and Student Grade Calculator with interactive features.
-        Gained hands‑on experience in Java fundamentals, logic building, and modular program design
-    </p>
-    <div class="flex gap-4">
-        <a href="https://github.com/divya-133/Mini-Project" class="border border-yellow-400 text-yellow-400 px-6 py-2 rounded-lg font-semibold hover:bg-yellow-400/10 transition-all duration-300">Code</a>
-    </div>
-</div>
+        </div>
+        <p class="text-gray-300 mb-6 leading-relaxed">
+          Created mini‑projects in Core Java applying OOP concepts: Number Guessing Game, Quiz App, Student Grade Calculator.
+        </p>
+        <div class="flex flex-wrap gap-4">
+          <a href="https://github.com/divya-133/Mini-Project" class="border border-yellow-400 text-yellow-400 px-6 py-2 rounded-lg font-semibold hover:bg-yellow-400/10 transition-all duration-300">Code</a>
+        </div>
+      </div>
 
-<!-- Project 6: Social Media App -->
-<div class="project-card bg-gradient-to-br from-red-500/10 to-red-300/10 border border-red-500/20 rounded-xl p-8 transition-all duration-300 hover:border-red-500/40">
-    <img src="assets/logos/coming-soon.jpg" alt="Landing Page" lass="w-full h-auto object-cover rounded-lg mb-6" />
-    <h3 class="text-2xl font-bold text-red-500 mb-4">Social Media App</h3>
-    <div class="code-block rounded-lg p-4 mb-6 font-mono text-sm">
+      <!-- Project 6 -->
+      <div class="project-card bg-gradient-to-br from-red-500/10 to-red-300/10 border border-red-500/20 rounded-xl p-8 transition-all duration-300 hover:border-red-500/40">
+        <img src="assets/logos/coming-soon.jpg" alt="Social Media App" class="w-full h-auto object-cover rounded-lg mb-6" />
+        <h3 class="text-2xl font-bold text-red-500 mb-4">Social Media App</h3>
+        <div class="code-block rounded-lg p-4 mb-6 font-mono text-sm overflow-x-auto">
 <pre><code><span class="text-neon-purple">const</span> <span class="text-neon-cyan">project</span> = {
     <span class="text-neon-green">name</span>: '<span class="text-orange-400">Social Media App</span>',
     <span class="text-neon-green">tools</span>: ['<span class="text-orange-400">TypeScript</span>','<span class="text-orange-400">Tailwind CSS</span>','<span class="text-orange-400">Next.js 14</span>'],
     <span class="text-neon-green">myRole</span>: '<span class="text-orange-400">Full Stack Developer</span>',
 };</code></pre>
-    </div>
-    <p class="text-gray-300 mb-6 leading-relaxed">
-        Building Connectly, a responsive full‑stack social media platform with real‑time chat, posts, and profiles using Next.js 14, TypeScript, Tailwind CSS, and Node.js.
-        Optimized routing, theming, and UI interactivity to boost performance and engagement across devices by 40%.
-    </p>
-    <div class="flex gap-4">
-        <a href="#" class="bg-gradient-to-r from-red-500 to-red-400 px-6 py-2 rounded-lg font-semibold hover:shadow-lg transition-all duration-300">Live Demo</a>
-        <a href="#" class="border border-red-500 text-red-500 px-6 py-2 rounded-lg font-semibold hover:bg-red-500/10 transition-all duration-300">Code</a>
-    </div>
-</div>
-<!-- Project 6: Opportunet -->
-<div class="project-card bg-gradient-to-br from-teal-500/10 to-teal-300/10 border border-teal-500/20 rounded-xl p-8 transition-all duration-300 hover:border-teal-500/40">
-    <img src="assets/logos/coming-soon.jpg" alt="Landing Page" lass="w-full h-auto object-cover rounded-lg mb-6" />
-    <h3 class="text-2xl font-bold text-teal-500 mb-4">Opportunet</h3>
-    <div class="code-block rounded-lg p-4 mb-6 font-mono text-sm">
+        </div>
+        <p class="text-gray-300 mb-6 leading-relaxed">
+          Building Connectly, a full‑stack social media platform with real‑time chat, posts, profiles using Next.js 14, TS, Tailwind CSS, Node.js.
+        </p>
+        <div class="flex flex-wrap gap-4">
+          <a href="#" class="bg-gradient-to-r from-red-500 to-red-400 px-6 py-2 rounded-lg font-semibold hover:shadow-lg transition-all duration-300">Live Demo</a>
+          <a href="#" class="border border-red-500 text-red-500 px-6 py-2 rounded-lg font-semibold hover:bg-red-500/10 transition-all duration-300">Code</a>
+        </div>
+      </div>
+
+      <!-- Project 7 -->
+      <div class="project-card bg-gradient-to-br from-teal-500/10 to-teal-300/10 border border-teal-500/20 rounded-xl p-8 transition-all duration-300 hover:border-teal-500/40">
+        <img src="assets/logos/coming-soon.jpg" alt="Opportunet" class="w-full h-auto object-cover rounded-lg mb-6" />
+        <h3 class="text-2xl font-bold text-teal-500 mb-4">Opportunet</h3>
+        <div class="code-block rounded-lg p-4 mb-6 font-mono text-sm overflow-x-auto">
 <pre><code><span class="text-neon-purple">const</span> <span class="text-neon-cyan">project</span> = {
     <span class="text-neon-green">name</span>: '<span class="text-orange-400">Opportunet</span>',
     <span class="text-neon-green">tools</span>: ['<span class="text-orange-400">TypeScript</span>','<span class="text-orange-400">Tailwind CSS</span>','<span class="text-orange-400">Next.js 14</span>'],
     <span class="text-neon-green">myRole</span>: '<span class="text-orange-400">Full Stack Developer</span>',
 };</code></pre>
-    </div>
-    <p class="text-gray-300 mb-6 leading-relaxed">
-        Building a responsive full‑stack student opportunity platform (jobs, internships, hackathons) with Next.js 14, TypeScript, Tailwind CSS, MongoDB, JWT, Lucide Icons, and ShadCN UI.
-        Developed dashboards, secure authentication, and bookmarking to boost engagement, streamline tracking, and improve cross‑device performance.
-    </p>
-    <div class="flex gap-4">
-        <a href="#" class="bg-gradient-to-r from-teal-500 to-teal-400 px-6 py-2 rounded-lg font-semibold hover:shadow-lg transition-all duration-300">Live Demo</a>
-        <a href="https://github.com/divya-133/opportunet" class="border border-teal-500 text-teal-500 px-6 py-2 rounded-lg font-semibold hover:bg-teal-500/10 transition-all duration-300">Code</a>
-    </div>
-</div>
-
-</div>
-        <!-- View More Button -->
-        <div class="text-center mt-8">
-            <button id="viewMoreBtn" class="bg-gradient-to-r from-electric-blue to-neon-cyan px-8 py-3 rounded-lg font-semibold hover:shadow-lg transition-all duration-300">
-                View More
-            </button>
         </div>
+        <p class="text-gray-300 mb-6 leading-relaxed">
+          Responsive full‑stack student opportunity platform with jobs, internships, hackathons using Next.js 14, TS, Tailwind CSS, MongoDB, JWT.
+        </p>
+        <div class="flex flex-wrap gap-4">
+          <a href="#" class="bg-gradient-to-r from-teal-500 to-teal-400 px-6 py-2 rounded-lg font-semibold hover:shadow-lg transition-all duration-300">Live Demo</a>
+          <a href="https://github.com/divya-133/opportunet" class="border border-teal-500 text-teal-500 px-6 py-2 rounded-lg font-semibold hover:bg-teal-500/10 transition-all duration-300">Code</a>
+        </div>
+      </div>
     </div>
+
+    <!-- View More Button -->
+    <div class="text-center mt-8">
+      <button id="viewMoreBtn" class="bg-gradient-to-r from-electric-blue to-neon-cyan px-8 py-3 rounded-lg font-semibold hover:shadow-lg transition-all duration-300">
+        View More
+      </button>
+    </div>
+  </div>
 </section>
-<!-- @END_COMPONENT: ProjectsSection -->
 
 <!-- Toggle Script -->
 <script>
-    const viewMoreBtn = document.getElementById('viewMoreBtn');
-    const extraProjects = document.getElementById('extra-projects');
-
-    viewMoreBtn.addEventListener('click', () => {
-        extraProjects.classList.toggle('hidden');
-        viewMoreBtn.textContent = extraProjects.classList.contains('hidden') ? 'View More' : 'View Less';
-    });
+  const viewMoreBtn = document.getElementById('viewMoreBtn');
+  const extraProjects = document.getElementById('extra-projects');
+  viewMoreBtn.addEventListener('click', () => {
+    extraProjects.classList.toggle('hidden');
+    viewMoreBtn.textContent = extraProjects.classList.contains('hidden') ? 'View More' : 'View Less';
+  });
 </script>
-
 
     <!-- Certifications Section -->
 <section id="certifications" class="py-20 px-4 relative">
