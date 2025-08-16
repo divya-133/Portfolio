@@ -139,7 +139,7 @@
 
     <!-- Hero Section -->
 <!-- @COMPONENT: HeroSection -->
-<section id="home" class="min-h-screen flex items-center justify-center relative overflow-hidden pt-20">
+<section id="home" class="min-h-[90vh] flex items-center justify-center relative overflow-hidden pt-16">
     <!-- Background Animation -->
     <div class="absolute inset-0">
         <div class="absolute top-1/4 left-1/4 w-64 h-64 bg-electric-blue/20 rounded-full filter blur-3xl animate-float"></div>
@@ -159,7 +159,7 @@
         </div>
 
         <!-- Code Block -->
-        <div class="code-block rounded-xl p-6 md:p-8 max-w-4xl mx-auto mb-8 text-left font-mono text-sm md:text-base animate-slide-up overflow-x-auto whitespace-pre scrollbar-hide" style="animation-delay: 0.5s">
+        <div class="code-block rounded-xl p-6 md:p-4 max-w-3xl mx-auto mb-8 text-left font-mono text-sm md:text-base animate-slide-up overflow-x-auto whitespace-pre scrollbar-hide" style="animation-delay: 0.5s">
             <div class="flex items-center mb-4">
                 <div class="flex space-x-2">
                     <div class="w-3 h-3 bg-red-500 rounded-full"></div>
@@ -204,7 +204,7 @@
 .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
 </style>
 <!-- @END_COMPONENT: HeroSection -->
->
+
 
     <!-- About Section -->
 <section id="about" class="py-20 relative">
@@ -349,133 +349,101 @@
     </section>
 
 
-    <!-- Skills Section -->
-<section id="skills" class="py-20 bg-gradient-to-b from-dark-200 to-dark-400 overflow-hidden">
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-<div class="text-center mb-16">
-    <h2 class="text-4xl md:text-5xl font-bold gradient-text mb-4">Skills</h2>
-</div>
-
- <!-- Skills Marquee -->
-<div class="relative">
-  <div class="flex space-x-8 md:animate-marquee overflow-x-auto md:overflow-hidden scrollbar-hide snap-x snap-mandatory">
-    <!-- First set of skills -->
-    <div class="skill-item flex flex-col items-center min-w-[120px] snap-start transition-all duration-300">
-      <i class="fab fa-html5 text-6xl text-orange-500 mb-2"></i>
-      <span class="text-white font-medium">HTML</span>
-    </div>
-    <div class="skill-item flex flex-col items-center min-w-[120px] snap-start transition-all duration-300">
-      <i class="fab fa-css3-alt text-6xl text-blue-500 mb-2"></i>
-      <span class="text-white font-medium">CSS</span>
-    </div>
-    <div class="skill-item flex flex-col items-center min-w-[120px] snap-start transition-all duration-300">
-      <i class="fab fa-js-square text-6xl text-yellow-500 mb-2"></i>
-      <span class="text-white font-medium">JavaScript</span>
-    </div>
-    <div class="skill-item flex flex-col items-center min-w-[120px] snap-start transition-all duration-300">
-      <i class="fab fa-react text-6xl text-cyan-400 mb-2"></i>
-      <span class="text-white font-medium">React</span>
-    </div>
-    <div class="skill-item flex flex-col items-center min-w-[120px] snap-start transition-all duration-300">
-      <i class="fab fa-java text-6xl text-blue-400 mb-2"></i>
-      <span class="text-white font-medium">Java</span>
-    </div>
-    <div class="skill-item flex flex-col items-center min-w-[120px] snap-start transition-all duration-300">
-      <i class="fab mb-2" style="display:flex; align-items:center; justify-content:center;">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 154" width="64" height="64">
-          <path fill="#38B2AC" d="M128 0C93.867 0 74.667 17.067 70.4 51.2c9.067-13.867 20.267-19.2 33.6-16 7.307 1.76 12.48 6.907 18.24 12.64 9.387 9.333 20.213 20.053 43.893 20.053 34.133 0 53.333-17.067 57.6-51.2-9.067 13.867-20.267 19.2-33.6 16-7.307-1.76-12.48-6.907-18.24-12.64C162.507 10.72 151.68 0 128 0zM70.4 76.8C36.267 76.8 17.067 93.867 12.8 128c9.067-13.867 20.267-19.2 33.6-16 7.307 1.76 12.48 6.907 18.24 12.64 9.387 9.333 20.213 20.053 43.893 20.053 34.133 0 53.333-17.067 57.6-51.2-9.067 13.867-20.267 19.2-33.6 16-7.307-1.76-12.48-6.907-18.24-12.64C104.907 87.52 94.08 76.8 70.4 76.8z"/>
-        </svg>
-      </i>
-      <span class="text-white font-medium">Tailwind</span>
-    </div>
-    <div class="skill-item flex flex-col items-center min-w-[120px] snap-start transition-all duration-300">
-      <i class="fas fa-database text-6xl text-purple-500 mb-2"></i>
-      <span class="text-white font-medium">MongoDB</span>
-    </div>
-    <div class="skill-item flex flex-col items-center min-w-[120px] snap-start transition-all duration-300">
-      <i class="fab fa-figma text-6xl text-orange-400 mb-2"></i>
-      <span class="text-white font-medium">Figma</span>
-    </div>
-    <div class="skill-item flex flex-col items-center min-w-[120px] snap-start transition-all duration-300">
-      <img src="assets/logos/canva-icon.jpg" alt="Canva Logo" class="mb-2" width="58" height="58">
-      <span class="text-white font-medium">Canva</span>
-    </div>
-    <div class="skill-item flex flex-col items-center min-w-[120px] snap-start transition-all duration-300">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Visual_Studio_Code_1.35_icon.svg" alt="VS Code Logo" class="mb-2" width="58" height="58">
-      <span class="text-white font-medium">VS Code</span>
-    </div>
-    <div class="skill-item flex flex-col items-center min-w-[120px] snap-start transition-all duration-300">
-      <i class="fab fa-git-alt text-6xl text-red-500 mb-2"></i>
-      <span class="text-white font-medium">Git</span>
-    </div>
-    <div class="skill-item flex flex-col items-center min-w-[120px] snap-start transition-all duration-300">
-      <i class="fab fa-github text-6xl text-white mb-2"></i>
-      <span class="text-white font-medium">GitHub</span>
-    </div>
-    <!-- Duplicate set starts here, in **same order** so no gap when looping -->
-    <div class="skill-item flex flex-col items-center min-w-[120px] snap-start transition-all duration-300">
-      <i class="fab fa-html5 text-6xl text-orange-500 mb-2"></i>
-      <span class="text-white font-medium">HTML</span>
-    </div>
-    <div class="skill-item flex flex-col items-center min-w-[120px] snap-start transition-all duration-300">
-      <i class="fab fa-css3-alt text-6xl text-blue-500 mb-2"></i>
-      <span class="text-white font-medium">CSS</span>
-    </div>
-    <div class="skill-item flex flex-col items-center min-w-[120px] snap-start transition-all duration-300">
-      <i class="fab fa-js-square text-6xl text-yellow-500 mb-2"></i>
-      <span class="text-white font-medium">JavaScript</span>
-    </div>
-    <div class="skill-item flex flex-col items-center min-w-[120px] snap-start transition-all duration-300">
-      <i class="fab fa-react text-6xl text-cyan-400 mb-2"></i>
-      <span class="text-white font-medium">React</span>
-    </div>
-    <div class="skill-item flex flex-col items-center min-w-[120px] snap-start transition-all duration-300">
-      <i class="fab fa-java text-6xl text-blue-400 mb-2"></i>
-      <span class="text-white font-medium">Java</span>
-    </div>
-    <div class="skill-item flex flex-col items-center min-w-[120px] snap-start transition-all duration-300">
-      <i class="fab mb-2" style="display:flex; align-items:center; justify-content:center;">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 154" width="64" height="64">
-          <path fill="#38B2AC" d="M128 0C93.867 0 74.667 17.067 70.4 51.2c9.067-13.867 20.267-19.2 33.6-16 7.307 1.76 12.48 6.907 18.24 12.64 9.387 9.333 20.213 20.053 43.893 20.053 34.133 0 53.333-17.067 57.6-51.2-9.067 13.867-20.267 19.2-33.6 16-7.307-1.76-12.48-6.907-18.24-12.64C162.507 10.72 151.68 0 128 0zM70.4 76.8C36.267 76.8 17.067 93.867 12.8 128c9.067-13.867 20.267-19.2 33.6-16 7.307 1.76 12.48 6.907 18.24 12.64 9.387 9.333 20.213 20.053 43.893 20.053 34.133 0 53.333-17.067 57.6-51.2-9.067 13.867-20.267 19.2-33.6 16-7.307-1.76-12.48-6.907-18.24-12.64C104.907 87.52 94.08 76.8 70.4 76.8z"/>
-        </svg>
-      </i>
-      <span class="text-white font-medium">Tailwind</span>
-    </div>
-    <div class="skill-item flex flex-col items-center min-w-[120px] snap-start transition-all duration-300">
-      <i class="fas fa-database text-6xl text-purple-500 mb-2"></i>
-      <span class="text-white font-medium">MongoDB</span>
-    </div>
-    <div class="skill-item flex flex-col items-center min-w-[120px] snap-start transition-all duration-300">
-      <i class="fab fa-figma text-6xl text-orange-400 mb-2"></i>
-      <span class="text-white font-medium">Figma</span>
-    </div>
-    <div class="skill-item flex flex-col items-center min-w-[120px] snap-start transition-all duration-300">
-      <img src="assets/logos/canva-icon.jpg" alt="Canva Logo" class="mb-2" width="58" height="58">
-      <span class="text-white font-medium">Canva</span>
-    </div>
-    <div class="skill-item flex flex-col items-center min-w-[120px] snap-start transition-all duration-300">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Visual_Studio_Code_1.35_icon.svg" alt="VS Code Logo" class="mb-2" width="58" height="58">
-      <span class="text-white font-medium">VS Code</span>
-    </div>
-    <div class="skill-item flex flex-col items-center min-w-[120px] snap-start transition-all duration-300">
-      <i class="fab fa-git-alt text-6xl text-red-500 mb-2"></i>
-      <span class="text-white font-medium">Git</span>
-    </div>
-    <div class="skill-item flex flex-col items-center min-w-[120px] snap-start transition-all duration-300">
-      <i class="fab fa-github text-6xl text-white mb-2"></i>
-      <span class="text-white font-medium">GitHub</span>
-    </div>
-  </div>
-</div>
-</div>
-</section>
-
-<style>
-/* Hide scrollbars on WebKit (Chrome/Safari) and Firefox */
-.scrollbar-hide::-webkit-scrollbar { display: none; }
-.scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
-</style>
-
+ <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-gradient-to-b from-dark-200 to-dark-400 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold gradient-text mb-4">Skills</h2>
+            </div>
+            
+            <!-- Skills Marquee -->
+            <div class="relative">
+                <div class="flex space-x-8 animate-marquee">
+                    <div class="skill-item flex flex-col items-center min-w-[120px] transition-all duration-300">
+                        <i class="fab fa-html5 text-6xl text-orange-500 mb-2"></i>
+                        <span class="text-white font-medium">HTML</span>
+                    </div>
+                    <div class="skill-item flex flex-col items-center min-w-[120px] transition-all duration-300">
+                        <i class="fab fa-css3-alt text-6xl text-blue-500 mb-2"></i>
+                        <span class="text-white font-medium">CSS</span>
+                    </div>
+                    <div class="skill-item flex flex-col items-center min-w-[120px] transition-all duration-300">
+                        <i class="fab fa-js-square text-6xl text-yellow-500 mb-2"></i>
+                        <span class="text-white font-medium">JavaScript</span>
+                    </div>
+                    <div class="skill-item flex flex-col items-center min-w-[120px] transition-all duration-300">
+                        <i class="fab fa-react text-6xl text-cyan-400 mb-2"></i>
+                        <span class="text-white font-medium">React</span>
+                    </div>
+                    <div class="skill-item flex flex-col items-center min-w-[120px] transition-all duration-300">
+                        <i class="fab fa-java text-6xl text-blue-400 mb-2"></i>
+                        <span class="text-white font-medium">Java</span>
+                    </div>
+                    <div class="skill-item flex flex-col items-center min-w-[120px] transition-all duration-300">
+                    <!-- Using a fake 'fab' style but inserting an inline SVG inside -->
+                    <i class="fab mb-2" style="display:flex; align-items:center; justify-content:center;">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 154" width="64" height="64">
+                    <path fill="#38B2AC" d="M128 0C93.867 0 74.667 17.067 70.4 51.2c9.067-13.867 20.267-19.2 
+                       33.6-16 7.307 1.76 12.48 6.907 18.24 12.64 9.387 9.333 20.213 20.053 43.893 
+                       20.053 34.133 0 53.333-17.067 57.6-51.2-9.067 13.867-20.267 19.2-33.6 16-7.307-1.76-12.48-6.907-18.24-12.64C162.507 
+                       10.72 151.68 0 128 0zM70.4 76.8C36.267 76.8 17.067 93.867 12.8 128c9.067-13.867 
+                       20.267-19.2 33.6-16 7.307 1.76 12.48 6.907 18.24 12.64 9.387 9.333 20.213 20.053 
+                       43.893 20.053 34.133 0 53.333-17.067 57.6-51.2-9.067 13.867-20.267 19.2-33.6 
+                       16-7.307-1.76-12.48-6.907-18.24-12.64C104.907 87.52 94.08 76.8 70.4 76.8z"/>
+                    </svg>
+                    </i>
+                    <span class="text-white font-medium">Tailwind</span>
+                    </div>
+                    <div class="skill-item flex flex-col items-center min-w-[120px] transition-all duration-300">
+                        <i class="fas fa-database text-6xl text-purple-500 mb-2"></i>
+                        <span class="text-white font-medium">MongoDB</span>
+                    </div>
+                    <div class="skill-item flex flex-col items-center min-w-[120px] transition-all duration-300">
+                        <i class="fab fa-figma text-6xl text-orange-400 mb-2"></i>
+                        <span class="text-white font-medium">Figma</span>
+                    </div>
+                    <div class="skill-item flex flex-col items-center min-w-[120px] transition-all duration-300">
+                         <img src="assets/logos/canva-icon.jpg" alt="Canva Logo" class="mb-2" width="58" height="58">
+                         <span class="text-white font-medium">Canva</span>
+                    </div>
+                    <div class="skill-item flex flex-col items-center min-w-[120px] snap-start">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Visual_Studio_Code_1.35_icon.svg" alt="VS Code Logo" class="mb-2" width="58" height="58">
+                    <span class="text-white font-medium">VS Code</span>
+                </div>
+                    <div class="skill-item flex flex-col items-center min-w-[120px] transition-all duration-300">
+                        <i class="fab fa-git-alt text-6xl text-red-500 mb-2"></i>
+                        <span class="text-white font-medium">Git</span>
+                    </div>
+                    <div class="skill-item flex flex-col items-center min-w-[120px] transition-all duration-300">
+                       <i class="fab fa-github text-6xl text-white mb-2"></i>
+                       <span class="text-white font-medium">GitHub</span> 
+                    </div>
+                    <!-- Duplicate for seamless loop -->
+                    <div class="skill-item flex flex-col items-center min-w-[120px] transition-all duration-300">
+                        <i class="fab fa-html5 text-6xl text-orange-500 mb-2"></i>
+                        <span class="text-white font-medium">HTML</span>
+                    </div>
+                    <div class="skill-item flex flex-col items-center min-w-[120px] transition-all duration-300">
+                        <i class="fab fa-css3-alt text-6xl text-blue-500 mb-2"></i>
+                        <span class="text-white font-medium">CSS</span>
+                    </div>
+                    <div class="skill-item flex flex-col items-center min-w-[120px] transition-all duration-300">
+                        <i class="fab fa-js-square text-6xl text-yellow-500 mb-2"></i>
+                        <span class="text-white font-medium">JavaScript</span>
+                    </div>
+                    <div class="skill-item flex flex-col items-center min-w-[120px] transition-all duration-300">
+                        <i class="fab fa-react text-6xl text-cyan-400 mb-2"></i>
+                        <span class="text-white font-medium">React</span>
+                    </div>
+                    <div class="skill-item flex flex-col items-center min-w-[120px] transition-all duration-300">
+                        <i class="fab fa-java text-6xl text-blue-400 mb-2"></i>
+                        <span class="text-white font-medium">Java</span>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section> 
    <!-- Projects Section -->
 <section id="projects" class="py-20 relative">
   <div class="container mx-auto px-6">
